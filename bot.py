@@ -19,9 +19,9 @@ from sqlalchemy.orm import declarative_base, Mapped, mapped_column
 from sqlalchemy import select, String, BigInteger, JSON, DateTime
 
 # ================= CONFIGURATION ================= #
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # Replace with your actual Bot Token
+BOT_TOKEN = "8997704779:AAH5nvuXyx3jW90qfSHolYV2HtTWQs1Grog"  # Replace with your actual Bot Token
 MAIN_ADMIN_ID = 6796088344
-WEBHOOK_DOMAIN = "https://your-render-app-url.onrender.com"  # Replace with actual Render URL later
+WEBHOOK_DOMAIN = "https://expert-octo-adventure-yhfh.onrender.com"  # Replace with actual Render URL later
 WEBHOOK_PATH = f"/webhook/{BOT_TOKEN}"
 WEBHOOK_URL = f"{WEBHOOK_DOMAIN}{WEBHOOK_PATH}"
 WEBAPP_HOST = "0.0.0.0"
