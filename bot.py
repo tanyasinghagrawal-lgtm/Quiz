@@ -582,7 +582,8 @@ def main():
             await conn.run_sync(Base.metadata.create_all)
     
     # We must run table creation synchronously before starting the app
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     loop.run_until_complete(create_tables())
 
     application = Application.builder().token(BOT_TOKEN).build()
